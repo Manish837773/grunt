@@ -1,0 +1,78 @@
+Java has buit in API(Apllication Programming Interface) which contains packages, methods and classes which are useful for programming. For example the Date class, DateTime class etc.
+
+OBJECT CLASS 
+    The object class in java is the implicit super class of all classes in java. The methods in Object class are inherited by all classes in java. Any method that uses Object reference can take in object in java.
+
+- Methods in Object class are 
+  --> boolean equals(Object)
+  --> Class getClass()
+  --> int hashCode()
+  --> String toString()
+
+equals()
+    By default the equals method compares the memory addressess of the the two entities. 
+    This method can be overriden based on requirement.
+
+int hashCode()
+    In Java the hastables are used to improve the performace hence hashcodes are present for all objects.
+    HAshcode is a 32 bit number by default it uses the memory address of the object
+    String class the hashcode has been overriden and it uses the string value.
+
+hashCode() and equals() contract
+    If two objects are equal then their hascodes will be the same.
+    If two objects have same hashcode they may not be equal.
+    So if the equals is overriden then the hascode must also be overriden so as to keep this contract.
+
+WRAPPERS IN JAVA
+    Wrappers are used to represent primitive data as objects so that built in functions can be used.
+    boolean --> Boolean
+    int --> Integer
+    float --> Float
+    long --> Long 
+    char --> Character
+    short --> Short
+    byte --> Byte
+
+    Java collections cannot store primitive datatypes hence objects can be used.
+    Wrapped classes have built in methods that can be used to convert the data type.
+    Always use primitive datatypes in other functions as it much quicker since they aren't objects.
+
+BUILT IN METHODS OF int,float etc     
+    Integer.parseInt(String)
+        Returns a primitive type of the number String sent. 
+
+    int INteger.compaerTo(Integer)
+        Return 0 if equal, <0 if v1>v2, >0 if v2>v1
+
+BUILT IN METHODS String
+    Strings are immutable evertime a new value is given to same refrence a a new object is created and older references are moved to different memory this might use up more memory hence JVM has a seperate memory space called String Pool where the above takes place.
+    String class is final and cannot be overriden.
+
+    Methods
+        int .length()
+            Used to return the length of the string.
+        .split()
+            Converts the string into an array of characters.
+        int .indexOf(char)
+            Returns the first index of the character.
+        .trim()
+            Removes white spaces in the String
+        char[] .toCharArray(String)
+            Returns all characters in array
+        boolean .isLetter()
+            Checks if it is isLetter
+        
+    s1 == s2 will compare values.
+
+    String Literals and String objects  
+        String literals are initialised using the "" whereas the objects are created with new keyword.
+        If two string objects are created one witg literal and the other with new then both objects will have different memory spaces used whereas if both are literals then reference will point to the same memory space. 
+
+    String Buffer and String Builder
+        These are mutable Sting classes new object is not created in the String buffer and builder. String Buffer id synchronised and String Builder in non-syncronised and builder is used when thread safety is not importatnt. 
+        String and String BUffer are slower than String Builder.
+        
+
+    
+
+    
