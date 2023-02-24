@@ -41,7 +41,7 @@ BUILT IN METHODS OF int,float etc
     Integer.parseInt(String)
         Returns a primitive type of the number String sent. 
 
-    int INteger.compaerTo(Integer)
+    int Integer.compareTo(Integer)
         Return 0 if equal, <0 if v1>v2, >0 if v2>v1
 
 BUILT IN METHODS String
@@ -70,8 +70,42 @@ BUILT IN METHODS String
 
     String Buffer and String Builder
         These are mutable Sting classes new object is not created in the String buffer and builder. String Buffer id synchronised and String Builder in non-syncronised and builder is used when thread safety is not importatnt. 
-        String and String BUffer are slower than String Builder.
+        String and String Buffer are slower than String Builder.
+
+        STRING BUILDER
+            String builder is non-synchrounous and is quicker. Part of the java.lang package. 
+
+            Syntax:
+            public final class StringBuilder extends Object implements Serializable, CharSequence
+
+            Constructors:
+            StringBuilder(), StringBuilder(CharSequence c/int/String);
+
+            Methods:
+                .append(any class); --> appends the string object 
+                .appendCodePoint(int) --> appends unicode reference of int value
+                .delete(start, end) --> removes all the characters from substring
+                .indexOf(String str) --> returns index of the substring
+                .length() --> returns the length of the string
+                .reverse() --> returns the reverse of string
         
+        STRING BUFFER
+            It has similar methods but the StringBuffer class is synchronous and is slower than StringBuilder.
+
+SCANNER CLASS
+    The Scanner class is part of the java.util package of java, it allows the user to read input data.
+
+    METHODS
+        String next() --> Returns next token from the Scanner
+        String nextLine() --> Moves scanner position to next line and returns the value of the String
+        byte nextbyte() --> Returns the next token as byte similarly with other data types.
+        nextInt(), nextFloat(), nextDouble(), nextLong().
+    
+CONSOLE CLASS
+    This is part of java.io package in java. This class is used to read and write from a console if it exists.Console can be used instead of using the System.in or System.out classes.
+    The console class class can read text or can read password without the user noticing while writing in console. 
+
+    
 
     
 
