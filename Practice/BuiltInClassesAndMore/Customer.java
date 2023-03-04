@@ -1,4 +1,4 @@
-package BuiltInClassesAndMore;
+package Practice.BuiltInClassesAndMore;
 
 public class Customer {
     private int custId;

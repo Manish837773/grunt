@@ -105,8 +105,12 @@ CONSOLE CLASS
     This is part of java.io package in java. This class is used to read and write from a console if it exists.Console can be used instead of using the System.in or System.out classes.
     The console class class can read text or can read password without the user noticing while writing in console. 
 
-    
 
+DAY 3
+
+EXCEPTIONS
+An event that deviates from the normal flow is called an exception.
+Exceptions occur very frequently during programming. 
     
 
     
